@@ -36,7 +36,6 @@ theme:
 # Плагины
 plugins:
   - search
-  - mkdocs-video
 
 # Расширения Markdown (для красивых блоков, таблиц и кода)
 markdown_extensions:
