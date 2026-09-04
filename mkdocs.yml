@@ -1,56 +1,124 @@
-site_name: Моя крутая документация
-site_url: https://example.com/ # Замени на свой домен, если есть
-site_description: Лучшая документация в мире
+site_name: PetrSU IMIT Helper
+site_url: https://williamadamswag.github.io/PetrSU_IMIT_Helper
+site_description: .
+
+copyright: Copyright &copy; 2026 Никита Чесноков
 
 theme:
-  name: material
-  language: ru # Русифицируем интерфейс (поиск, кнопки)
-  
-  # Настройка палитры (Светлая и Темная темы)
-  palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7 
-        name: Переключиться на темную тему
-    - scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
-        name: Переключиться на светлую тему
+    name: material
+    language: ru
+    custom_dir: docs/overrides
 
-  # Полезные фичи интерфейса
-  features:
-    - navigation.instant      # Мгновенная загрузка страниц (как в SPA)
-    - navigation.tracking     # Сохранение хэшей в URL
-    - navigation.sections     # Группировка разделов в боковом меню
-    - navigation.expand       # Автоматическое раскрытие разделов
-    - navigation.top          # Кнопка "Наверх"
-    - search.suggest          # Подсказки в поиске
-    - search.highlight        # Подсветка найденного текста
-    - content.code.copy       # Кнопка копирования кода
-    - content.code.annotate   # Комментарии внутри блоков кода
+    palette:
+        - scheme: default
+          primary: indigo
+          accent: indigo
+          toggle:
+                icon: material/brightness-7 
+                name: Переключиться на темную тему
+        - scheme: slate
+          primary: indigo
+          accent: indigo
+          toggle:
+                icon: material/brightness-4
+                name: Переключиться на светлую тему
 
-# Плагины
+    features:
+        - navigation.instant
+        - navigation.tracking
+        - navigation.sections
+        - navigation.expand
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.indexes
+        - navigation.top
+        - navigation.footer
+        - search.suggest
+        - search.highlight
+        - content.code.annotate
+        - content.code.copy
+        - content.tabs.link
+        - consent
+
+nav:
+    - Главная: index.md
+
+    - Матанализ:
+        - Введение: math-analysis/index.md
+        - Теория множеств:
+            - Введение: math-analysis/set-theory/index.md
+            - 1. Основные понятия: math-analysis/set-theory/part1.md
+            - 2. Операции над множествами: math-analysis/set-theory/part2.md
+
+    - Аналитическая геометрия:
+        - Введение: analytic-geometry/index.md
+
+    - Алгебра:
+        - Введение: algebra/index.md
+
 plugins:
-  - search
-  - mkdocs-video
+    - search
+    - tags
 
-# Расширения Markdown (для красивых блоков, таблиц и кода)
 markdown_extensions:
-  - admonition          # Красивые блоки (Warning, Note, Info)
-  - pymdownx.details    # Сворачиваемые блоки
-  - pymdownx.superfences # Улучшенные блоки кода
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.tabbed:    # Вкладки (например, для разных языков программирования)
-      alternate_style: true
-  - tables
-  - attr_list
-  - md_in_html
+    - pymdownx.superfences
+    - pymdownx.critic
+    - pymdownx.caret
+    - pymdownx.keys
+    - pymdownx.mark
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences
+    - pymdownx.highlight:
+        anchor_linenums: true
+        line_spans: __span
+        pygments_lang_class: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.tabbed:
+        alternate_style: true
+    - pymdownx.arithmatex:
+        generic: true
+    - tables
+    - attr_list
+    - md_in_html
+
+extra_javascript:
+    - javascripts/mathjax.js
+    - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+    - stylesheets/extra.css
+
+extra:
+    analytics:
+        provider: google
+        property: G-3KBPVM4THS
+    
+    consent:
+        title: Согласие на использование cookies
+        description: >- 
+            Мы используем файлы cookie для оценки посещаемости и улучшения 
+            работы нашей документации. Вы можете изменить свои настройки в любой момент.
+        actions:
+            - accept
+            - manage
+
+    giscus:
+        repo: WilliamAdamsWAG/PetrSU_IMIT_Helper
+        repo_id: R_kgDOUOgTHQ
+        category: Q&A
+        category_id: DIC_kwDOUOgTHc4DE7WZ
+        mapping: pathname
+        strict: 0
+        reactions_enabled: 1
+        emit_metadata: 1
+        input_position: top
+        theme: preferred_color_scheme
+        lang: ru
+        crossorigin: anonymous
+
+    social:
+        - icon: fontawesome/brands/telegram
+          link: https://t.me/WilliamAdams_group
+          name: По любым вопросам
