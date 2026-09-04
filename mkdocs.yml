@@ -1,0 +1,56 @@
+site_name: Моя крутая документация
+site_url: https://example.com/ # Замени на свой домен, если есть
+site_description: Лучшая документация в мире
+
+theme:
+  name: material
+  language: ru # Русифицируем интерфейс (поиск, кнопки)
+  
+  # Настройка палитры (Светлая и Темная темы)
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7 
+        name: Переключиться на темную тему
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Переключиться на светлую тему
+
+  # Полезные фичи интерфейса
+  features:
+    - navigation.instant      # Мгновенная загрузка страниц (как в SPA)
+    - navigation.tracking     # Сохранение хэшей в URL
+    - navigation.sections     # Группировка разделов в боковом меню
+    - navigation.expand       # Автоматическое раскрытие разделов
+    - navigation.top          # Кнопка "Наверх"
+    - search.suggest          # Подсказки в поиске
+    - search.highlight        # Подсветка найденного текста
+    - content.code.copy       # Кнопка копирования кода
+    - content.code.annotate   # Комментарии внутри блоков кода
+
+# Плагины
+plugins:
+  - search
+  - mkdocs-video
+
+# Расширения Markdown (для красивых блоков, таблиц и кода)
+markdown_extensions:
+  - admonition          # Красивые блоки (Warning, Note, Info)
+  - pymdownx.details    # Сворачиваемые блоки
+  - pymdownx.superfences # Улучшенные блоки кода
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:    # Вкладки (например, для разных языков программирования)
+      alternate_style: true
+  - tables
+  - attr_list
+  - md_in_html
