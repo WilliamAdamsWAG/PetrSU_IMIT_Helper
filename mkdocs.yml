@@ -44,17 +44,31 @@ nav:
     - Главная: index.md
 
     - Матанализ:
-        - Введение: math-analysis/index.md
+        - Матанализ: math-analysis/index.md
         - Теория множеств:
             - Введение: math-analysis/set-theory/index.md
             - 1. Основные понятия: math-analysis/set-theory/part1.md
             - 2. Операции над множествами: math-analysis/set-theory/part2.md
 
     - Аналитическая геометрия:
-        - Введение: analytic-geometry/index.md
+        - Аналитическая геометрия: analytic-geometry/index.md
 
     - Алгебра:
-        - Введение: algebra/index.md
+        - Алгебра: algebra/index.md
+
+    - ОИиП:
+        - Основы информатики и программирования: base_inf_and_prog/index.md
+        - Язык С:
+            - Введение: base_inf_and_prog/c/index.md
+            - Первая программа: base_inf_and_prog/c/hello_world.md
+        - Лабы:
+            - Hello, Students!: base_inf_and_prog/labs/lab1.md
+            - Нужный этаж: base_inf_and_prog/labs/lab2.md
+            - Проблема 196: base_inf_and_prog/labs/lab3.md
+            - Гипотеза Гольдбаха: base_inf_and_prog/labs/lab4.md
+            - Калькулятор рациональных дробей: base_inf_and_prog/labs/lab5.md
+            - Англо-русский словарь: base_inf_and_prog/labs/lab6.md
+            - Прототип компьютерной игры: base_inf_and_prog/labs/lab7.md
 
 plugins:
     - search
