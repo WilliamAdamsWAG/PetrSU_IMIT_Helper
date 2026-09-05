@@ -77,3 +77,31 @@ extra_javascript:
 
 extra_css:
     - stylesheets/extra.css
+
+extra:
+    analytics:
+        provider: google
+        property: G-3KBPVM4THS
+    
+    consent:
+        title: Согласие на использование cookies
+        description: >- 
+            Мы используем файлы cookie для оценки посещаемости и улучшения 
+            работы нашей документации. Вы можете изменить свои настройки в любой момент.
+        actions:
+            - accept
+            - manage
+
+    giscus:
+        repo: WilliamAdamsWAG/PetrSU_IMIT_Helper
+        repo_id: R_kgDOUOgTHQ
+        category: Q&A
+        category_id: DIC_kwDOUOgTHc4DE7WZ
+        mapping: pathname
+        strict: 0
+        reactions_enabled: 1
+        emit_metadata: 1
+        input_position: top
+        theme: preferred_color_scheme
+        lang: ru
+        crossorigin: anonymous
