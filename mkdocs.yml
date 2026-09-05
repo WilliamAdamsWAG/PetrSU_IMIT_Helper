@@ -2,6 +2,8 @@ site_name: PetrSU IMIT Helper
 site_url: https://williamadamswag.github.io/PetrSU_IMIT_Helper
 site_description: .
 
+copyright: Copyright &copy; 2026 Никита Чесноков
+
 theme:
     name: material
     language: ru
@@ -35,6 +37,7 @@ theme:
         - search.highlight
         - content.code.annotate
         - content.code.copy
+        - content.tabs.link
         - consent
 
 nav:
@@ -55,8 +58,14 @@ nav:
 
 plugins:
     - search
+    - tags
 
 markdown_extensions:
+    - pymdownx.superfences
+    - pymdownx.critic
+    - pymdownx.caret
+    - pymdownx.keys
+    - pymdownx.mark
     - admonition
     - pymdownx.details
     - pymdownx.superfences
@@ -108,3 +117,8 @@ extra:
         theme: preferred_color_scheme
         lang: ru
         crossorigin: anonymous
+
+    social:
+        - icon: fontawesome/brands/telegram
+          link: https://t.me/WilliamAdams_group
+          name: По любым вопросам
