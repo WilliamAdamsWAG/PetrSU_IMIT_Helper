@@ -45,6 +45,7 @@ nav:
         - Теория множеств:
             - Введение: math-analysis/set-theory/index.md
             - 1. Основные понятия: math-analysis/set-theory/part1.md
+            - 2. Операции над множествами: math-analysis/set-theory/part2.md
 
     - Аналитическая геометрия:
         - Введение: analytic-geometry/index.md
