@@ -5,6 +5,7 @@ site_description: .
 theme:
     name: material
     language: ru
+    custom_dir: docs/overrides
 
     palette:
         - scheme: default
