@@ -1,0 +1,15 @@
+mjx-container[jax="CHTML"][display="true"] {
+       overflow-x: auto;
+       overflow-y: hidden;
+       max-width: 100%;
+       padding-bottom: 10px; /* Место для скроллбара */
+   }
+   
+   /* Делаем скроллбар тонким и аккуратным (опционально) */
+   mjx-container[jax="CHTML"][display="true"]::-webkit-scrollbar {
+       height: 6px;
+   }
+   mjx-container[jax="CHTML"][display="true"]::-webkit-scrollbar-thumb {
+       background: var(--md-default-fg-color--lighter);
+       border-radius: 3px;
+   }

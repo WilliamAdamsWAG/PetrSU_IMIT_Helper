@@ -2,6 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://williamadamswag.github.io/PetrSU_IMIT_Helper/</loc>
-         <lastmod>2026-09-04</lastmod>
+         <lastmod>2026-09-05</lastmod>
+    </url>
+    <url>
+         <loc>https://williamadamswag.github.io/PetrSU_IMIT_Helper/algebra/</loc>
+         <lastmod>2026-09-05</lastmod>
+    </url>
+    <url>
+         <loc>https://williamadamswag.github.io/PetrSU_IMIT_Helper/analytic-geometry/</loc>
+         <lastmod>2026-09-05</lastmod>
+    </url>
+    <url>
+         <loc>https://williamadamswag.github.io/PetrSU_IMIT_Helper/math-analysis/</loc>
+         <lastmod>2026-09-05</lastmod>
+    </url>
+    <url>
+         <loc>https://williamadamswag.github.io/PetrSU_IMIT_Helper/math-analysis/set-theory/</loc>
+         <lastmod>2026-09-05</lastmod>
+    </url>
+    <url>
+         <loc>https://williamadamswag.github.io/PetrSU_IMIT_Helper/math-analysis/set-theory/part1/</loc>
+         <lastmod>2026-09-05</lastmod>
     </url>
 </urlset>
