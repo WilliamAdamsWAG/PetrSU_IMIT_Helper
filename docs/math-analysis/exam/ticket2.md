@@ -3,34 +3,31 @@ comments: true
 tags: ["1 семестр"]
 ---
 
-!!! info "Определение"
+!!! abstract "Определение 2.1"
     **Прямым произведением множеств X и Y называют множество всех упорядоченных пар (x;y)**
-$$
-X \times Y = \{(x;y): x \in X, y \in Y\}
-$$
+    $$
+    X \times Y = \{(x;y): x \in X, y \in Y\}
+    $$
 
-!!! info "Определение"
+!!! abstract "Определение 2.2"
     **Если выделить множество $D \subset X \times Y: \forall \space x \in X \space \exists! \space(x;y) \in D$, то говорят, что на множестве X задана функция со значениями Y**
-
-$$
-y = f(x) \Leftrightarrow f:X \rightarrow Y
-$$
+    $$
+    y = f(x) \Leftrightarrow f:X \rightarrow Y
+    $$
 
 Для определений, данных выше, введем некоторые условия: Пусть $f:X \rightarrow Y, E \subset X, F \subset Y$
 
-!!! info "Определение"
+!!! abstract "Определение 2.3"
     **Образом E при отображении функции называют подмножество в Y, которое задается**
+    $$
+    f(E) = \{y \in Y: \space \exists \space x \in X; y = f(x)\}
+    $$
 
-$$
-f(E) = \{y \in Y: \space \exists \space x \in X; y = f(x)\}
-$$
-
-!!! info "Определение"
+!!! abstract "Определение 2.4"
     **Прообразом F при отображении функции называют подмножество в X, которое задается**
-
-$$
-f^{-1}(F) = \{x \in X: f(x) \in F\}
-$$
+    $$
+    f^{-1}(F) = \{x \in X: f(x) \in F\}
+    $$
 
 ## Основные свойства для образов функций
 
