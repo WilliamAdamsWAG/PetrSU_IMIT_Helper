@@ -55,6 +55,8 @@ nav:
             - 1. Множества, операции над множествами, их свойства: math-analysis/exam/ticket1.md
             - 2. Функции, образы и прообразы, их свойства: math-analysis/exam/ticket2.md
             - 3. Инъекция, сюръекция, биекция: math-analysis/exam/ticket3.md
+            - 5. Бинарные отношения. Отношения эквивалентности и теорема о разбиении множества: math-analysis/exam/ticket5.md
+            - 7. Счетные множества: math-analysis/exam/ticket7.md
 
     - ОИиП:
         - Основы информатики и программирования: base_inf_and_prog/index.md
