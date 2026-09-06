@@ -688,6 +688,8 @@
       
         
       
+        
+      
     
     
     
@@ -844,6 +846,34 @@
     
   
     2. Функции, образы и прообразы, их свойства
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ticket3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Инъекция, сюръекция, биекция
   
 
     
@@ -1300,47 +1330,53 @@
 
   <h1>1. Множества, операции над множествами, их свойства</h1>
 
-<div class="admonition info">
-<p class="admonition-title">Определение</p>
+<div class="admonition abstract">
+<p class="admonition-title">Определение 1.1</p>
 <p><strong>Множество – совокупность различающихся между собой объектов, которые</strong>
 <strong>называются элементами данного множества.</strong></p>
 </div>
-<div class="admonition info">
-<p class="admonition-title">Определение</p>
+<div class="admonition abstract">
+<p class="admonition-title">Определение 1.2</p>
 <p><strong>Пусть А и В – множества. <span class="arithmatex">\(A \subset B\)</span>, если <span class="arithmatex">\(\forall\space x\space (x \in A \Rightarrow x \in B)\)</span> (Читается так: при любом</strong>
 <strong>значении х выполняется условие: если х принадлежит А, тогда х принадлежит В).</strong></p>
 </div>
-<div class="admonition info">
-<p class="admonition-title">Определение</p>
+<div class="admonition abstract">
+<p class="admonition-title">Определение 1.3</p>
 <p>Множества А и В равны <span class="arithmatex">\((A = B)\)</span>, если <span class="arithmatex">\(A \subset B \space и\space B \subset A\)</span>, то есть <span class="arithmatex">\(A = B \Leftrightarrow \forall \space x \space (x \in A \Leftrightarrow x \in B)\)</span></p>
 </div>
+<hr />
 <h2 id="_1">Операции над множествами</h2>
 <p><span class="arithmatex">\(A \cup B\)</span> - Объединение, элементы которого являются хотя бы одного из множеств А или В (<span class="arithmatex">\(x \in A\)</span> и/или <span class="arithmatex">\(x \in B\)</span>)
 <span class="arithmatex">\(A \cap B\)</span> - Пересечение, элементы которого одновременно являются и А, и В
 А\B - Разность, элементы которого входят в А, но не входят в В</p>
+<hr />
 <h2 id="_2">Основные свойства</h2>
+<p><span class="arithmatex">\(1. \space (A \cup B) \cap C = (A \cap C) \cup (B \cap C)\)</span></p>
+<details class="note">
+<summary>Доказательство</summary>
 <div class="arithmatex">\[
-1. \space (A \cup B) \cap C = (A \cap C) \cup (B \cap C)
+\begin{aligned}
+x &amp;\in (A \cup B) \cap C  \\
+x &amp;\in A \cup B \space и \space x \in C  \\
+(x &amp;\in A \space и \space x \in C) \space или \space (x \in B \space и \space x \in C)  \\
+x &amp;\in (A \cap C) \cup (B \cap C)  \\
+\end{aligned}
 \]</div>
-<p><strong>Доказательство</strong></p>
+</details>
+<p><span class="arithmatex">\(2. \space (A \cap B) \cup C = (A \cup C) \cap (B \cup C)\)</span></p>
+<p><span class="arithmatex">\(3. \space \overline{A\cup B} = \bar{A} \cap \bar{B}\)</span></p>
+<details class="note">
+<summary>Доказательство</summary>
 <div class="arithmatex">\[
-\Rightarrow : x \in (A \cup B) \cap C \rightarrow x \in A \cup B \space и \space x \in C\rightarrow (x \in A \space и \space x \in C) \space или \space (x \in B \space и \space x \in C) \rightarrow x \in (A \cap C) \cup (B \cap C).
-\Leftarrow : x \in (A \cap C) \cup (B \cap C) \rightarrow x \in A \cap C \space или \space x \in B \cap C \rightarrow x \in C \space и \space (x \in A \space или \space x \in B) \rightarrow x \in (A \cup B) \cap C
+\begin{aligned}
+x &amp;\in \overline{A \cup B}\\
+x &amp;\in \bar{A} \space \overline{или} \space x \in \bar{B}\\
+x &amp;\in \bar{A} \space и \space x \in \bar{B}\\
+x &amp;\in \bar{A} \cap \bar{B}
+\end{aligned}
 \]</div>
-<div class="arithmatex">\[
-2. \space (A \cap B) \cup C = (A \cup C) \cap (B \cup C)
-\]</div>
-<div class="arithmatex">\[
-3. \space \overline{A\cup B} = \bar{A} \cap \bar{B}
-\]</div>
-<p><strong>Доказательство</strong></p>
-<div class="arithmatex">\[
-\Rightarrow: x \in \overline{A \cup B} \rightarrow x \in \bar{A} \space \overline{или} \space x \in \bar{B} \rightarrow x \in \bar{A} \space и \space x \in \bar{B} \rightarrow x \in \bar{A} \cap \bar{B}
-\Leftarrow: x \in \bar{A} \cap \bar{B} \rightarrow x \in \bar{A} \space и \space x \in \bar{B} \rightarrow x \in \bar{A} \space \overline{или} \space x \in \bar{B} \rightarrow x \in \overline{A \cup B}
-\]</div>
-<div class="arithmatex">\[
-\overline{A\cap B} = \bar{A} \cup \bar{B}
-\]</div>
+</details>
+<p><span class="arithmatex">\(4. \overline{A\cap B} = \bar{A} \cup \bar{B}\)</span></p>
 
 
 
