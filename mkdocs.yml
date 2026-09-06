@@ -50,17 +50,8 @@ nav:
             - 1. Основные понятия: math-analysis/set-theory/part1.md
             - 2. Операции над множествами: math-analysis/set-theory/part2.md
 
-    - Аналитическая геометрия:
-        - Аналитическая геометрия: analytic-geometry/index.md
-
-    - Алгебра:
-        - Алгебра: algebra/index.md
-
     - ОИиП:
         - Основы информатики и программирования: base_inf_and_prog/index.md
-        - Язык С:
-            - Введение: base_inf_and_prog/c/index.md
-            - Первая программа: base_inf_and_prog/c/hello_world.md
         - Лабы:
             - Hello, Students!: base_inf_and_prog/labs/lab1.md
             - Нужный этаж: base_inf_and_prog/labs/lab2.md
@@ -93,6 +84,9 @@ markdown_extensions:
         alternate_style: true
     - pymdownx.arithmatex:
         generic: true
+    - pymdownx.emoji:
+        emoji_index: !!python/name:material.extensions.emoji.twemoji
+        emoji_generator: !!python/name:material.extensions.emoji.to_svg
     - tables
     - attr_list
     - md_in_html
